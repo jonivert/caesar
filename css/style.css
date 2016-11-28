@@ -1,0 +1,28 @@
+html,
+body {
+    font-family: "Lucida Grande", Helvetica, Arial, sans-serif;
+    font-size: 18px;
+    margin: 0;
+    padding: 0;
+    color: #f8f8f8;
+    background-color: #029acf;
+
+}
+
+textarea {
+    color: #029acf;
+}
+
+.rotate {
+    margin-top: 100px;
+}
+
+.crypt {
+    margin: 25px 15px;
+}
+
+.form-control {
+    max-width: 100px;
+}
+
+

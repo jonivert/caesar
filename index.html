@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>Caesar cipher</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="Keywords" content="cryptography, cipher, algorithms, key">
+    <meta name="Description" content="The Web application allows you to encrypt text by Julius Caesar and decrypt text encoded in this way">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+    <link rel="stylesheet" href="css/style.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
+    <script src="libs/cipher.js"></script>
+</head>
+<body>
+    <div class="container">
+        <h1>Caesar cipher</h1>
+        <p>Cryptographic conversion of textual information in which each character in the plaintext is replaced by a symbol, located at a constant number of positions to the left or right of it in the alphabet.</p>
+        <hr>
+
+        <div class="row">
+            <form method="post">
+                <div class="col-md-5">
+                    <textarea rows="15" cols="40" name="inputText" id="inputText" required></textarea>
+                </div>
+                <div class="col-md-2 rotate">
+                    <div class="input-group">
+                        <span class="input-group-addon">ROT</span>
+                        <input type="number" class="form-control" id="shift" min="0" max="26">
+                    </div>
+                    <div class="input-group crypt">
+                        <button type="button" name="cipher" id="decrypt" class="btn btn-default">
+                            <span class="glyphicon glyphicon-arrow-left">Dec</span>
+                        </button>
+                        <button type="button" name="cipher" id="encrypt" class="btn btn-default">
+                            <span class="glyphicon glyphicon-arrow-right">Enc</span>
+                        </button>
+                    </div>
+                </div>
+                <div class="col-md-5">
+                    <textarea rows="15" cols="40" name="outputText" id="outputText" disabled></textarea>
+                </div>
+            </form>
+        </div>
+        <hr/>
+    </div>
+</body>
+</html>
